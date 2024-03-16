@@ -55,7 +55,7 @@ function bubbleSort(scores) {
         swapped = false;
         for (let j = 0; j < n - i - 1; j++) { 
             if (scores[j] > scores[j + 1]) {
-                [scores[j], scores[j + 1]] = [scores[j + 1], scores[j]]; // Destructuring assignment
+                [scores[j], scores[j + 1]] = [scores[j + 1], scores[j]]; 
                 swapped = true;
             }
         }
