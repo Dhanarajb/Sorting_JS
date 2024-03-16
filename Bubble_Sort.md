@@ -28,9 +28,7 @@ function bubbleSort(scores) {
     for (let i = 0; i < n - 1; i++) { 
         for (let j = 0; j < n - i - 1; j++) { 
             if (scores[j] > scores[j + 1]) {
-                const temp = scores[j];
-                scores[j] = scores[j + 1];
-                scores[j + 1] = temp;
+                [scores[j], scores[j + 1]] = [scores[j + 1], scores[j]]; 
             }
         }
     }
@@ -42,4 +40,5 @@ console.log("Original scores:", studentScores);
 bubbleSort(studentScores);
 
 console.log("Sorted scores:", studentScores);
+
 ```
