@@ -59,7 +59,7 @@ function bubbleSort(scores) {
                 swapped = true;
             }
         }
-        // If no two elements were swapped in the inner loop, array is sorted
+       
         if (!swapped) {
             break;
         }
