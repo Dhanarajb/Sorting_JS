@@ -43,3 +43,40 @@ const array = [64, 25, 12, 22, 11];
 console.log("Original Array: ", array);
 console.log("Sorted Array: ", selectionSort(array));
 ```
+DRY RUN
+```
+Initial Array: [64, 25, 12, 22, 11]
+
+Pass 1:
+
+Start with i = 0.
+Find the minimum element from index i = 0 to end of the array.
+Minimum element is 11 at index 4.
+Swap arr[0] and arr[4].
+Array becomes [11, 25, 12, 22, 64].
+
+Pass 2:
+
+Start with i = 1.
+Find the minimum element from index i = 1 to end of the array.
+Minimum element is 12 at index 2.
+No need to swap as the minimum is already at arr[1].
+Array remains [11, 12, 25, 22, 64].
+
+Pass 3:
+
+Start with i = 2.
+Find the minimum element from index i = 2 to end of the array.
+Minimum element is 22 at index 3.
+No need to swap as the minimum is already at arr[2].
+Array remains [11, 12, 22, 25, 64].
+
+Pass 4:
+
+Start with i = 3.
+Find the minimum element from index i = 3 to end of the array.
+Minimum element is 25 at index 3.
+No need to swap as the minimum is already at arr[3].
+Array remains [11, 12, 22, 25, 64].
+Sorted Array: [11, 12, 22, 25, 64]
+```
